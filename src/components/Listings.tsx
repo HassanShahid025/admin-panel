@@ -30,9 +30,9 @@ const Listings = () => {
     },
    ] 
   return (
-    <div className='bg-[#ffff] rounded-xl p-5 flex flex-col gap-5'>
-        <div className="flex items-center justify-between">
-            <h2 className="font-semibold text-xl">Listings</h2>
+    <div className='bg-[#ffff] rounded-lg p-5 flex flex-col gap-5'>
+        <div className="flex items-center justify-between text-sm">
+            <h2 className="font-semibold text-lg">Listings</h2>
             <div className="flex items-center gap-5">
                 <p className="text-[#959595]">Sort By</p>
                 <Dropdown/>
@@ -44,7 +44,7 @@ const Listings = () => {
         </div>
         <div className="flex gap-5">
             {listingsData.map((listing, index) => (
-                <div key={index} className="flex-1 flex flex-col gap-2">
+                <div key={index} className="flex-1 flex flex-col gap-3 text-sm">
                     <img src={listingImg} alt="" />
                     <h2 className="font-semibold">{listing.name}</h2>
                     <p className="text-[#BBBBBB]">{listing.beds} Beds, {listing.baths} Baths, {listing.area} sqft</p>

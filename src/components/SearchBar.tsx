@@ -5,7 +5,7 @@ const SearchBar = () => {
           <input
             type="text"
             placeholder="Search type of keywords"
-            className="bg-[#F8F8F8] outline-none w-full flex-grow px-2 py-1 text-gray-500"
+            className="bg-[#F8F8F8] outline-none w-full flex-grow px-2  text-gray-500"
           />
           <FaSearch className="flex items-center justify-center w-5 h-5  bg-transparent text-[#BBBBBB] cursor-pointer"/>
             

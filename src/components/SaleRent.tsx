@@ -132,14 +132,14 @@ const SaleRent = () => {
     selectedIndex === 0 ? ["#FFBF20", "#EEF1FF"] : ["#EEF1FF", "#FFBF20"];
 
   return (
-    <div className="bg-[#ffff] rounded-xl p-5 flex flex-col gap-10">
-      <h2 className="font-semibold text-xl">Sale And Rent</h2>
-      <div>
+    <div className="bg-[#ffff] rounded-xl p-5 flex flex-col gap-8">
+      <h2 className="font-semibold text-lg">Sale And Rent</h2>
+      <div className=" flex w-full justify-center">
         <Chart
           options={{ ...chartData.options, fill: { colors } }}
           series={chartData.series}
           type="donut"
-          width={380}
+          width={'120%'}
         />
       </div>
     </div>

@@ -41,13 +41,13 @@ const Cards = () => {
     },
   ];
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-5">
       {cardsInfo.map((card, index) => (
-        <div key={index} className="flex flex-1 gap-11 items-center bg-[#FFFFFF] rounded-xl p-5">
+        <div key={index} className="flex flex-1 gap-10 items-center bg-[#FFFFFF] rounded-xl p-3">
           <div className="flex flex-col gap-3">
             <p className="text-[#959595]">{card.name}</p>
-            <div className="flex gap-5 items-end">
-                {card.type === "currency" ? <p className="font-bold text-2xl">${card.currentValue}K</p> : <p className="font-bold text-2xl">{card.currentValue}</p>}
+            <div className="flex gap-3 items-end">
+                {card.type === "currency" ? <p className="font-bold text-xl">${card.currentValue}K</p> : <p className="font-bold text-xl">{card.currentValue}</p>}
               <div className="flex items-end gap-1">
               {card.currentValue - card.prevValue > 0 ? (
                 <>

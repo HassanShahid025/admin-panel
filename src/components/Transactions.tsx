@@ -26,10 +26,10 @@ const Transactions = () => {
   return (
     <div className="bg-[#ffff] rounded-xl p-5 flex flex-col gap-10">
       <div className="flex justify-between">
-        <h2 className="font-semibold text-xl">Transactions</h2>
+        <h2 className="font-semibold text-lg">Transactions</h2>
         <p className="text-[#FFBF20] font-semibold cursor-pointer">See all</p>
       </div>
-      <div className="flex flex-col justify-center gap-5">
+      <div className="flex flex-col justify-center gap-5 text-sm">
         {transactionsData.map((transaction, index) => (
           <div key={index} className="flex justify-between">
             <div className="flex gap-5">

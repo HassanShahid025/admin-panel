@@ -59,7 +59,7 @@ const Sidebar = () => {
     <div className=" w-1/5 flex flex-col justify-between min-h-screen">
       <div className="flex flex-col gap-20">
         <div className="flex justify-center pt-5 ">
-          <img src={logo} className="h-12" />
+          <img src={logo} className="h-9" />
         </div>
         <div>
           <div className="flex flex-col gap-10">
@@ -67,20 +67,20 @@ const Sidebar = () => {
               <NavLink
                 to={link.path}
                 key={index}
-                className="flex  gap-5"
+                className="flex  gap-2"
                 onClick={() => setLocation(link.path)}
               >
                 
-                  <div className={`w-2 h-9 rounded-tr rounded-br ${location === link.path ? "bg-[#FFBF20]" : ""}`}></div>
+                  <div className={`w-1.5 h-9 rounded-tr rounded-br ${location === link.path ? "bg-[#FFBF20]" : ""}`}></div>
                 
                 <div
-                  className={`flex items-center gap-7 ${
+                  className={`flex items-center gap-5 ${
                     location === link.path ? "pl-7" : "pl-8"
                   }`}
                 >
                   <img src={link.icon} />
                   <p
-                    className={`text-[#959595] text-lg ${
+                    className={`text-[#959595] text-sm ${
                       location === link.path ? "font-bold text-[#FFBF20]" : ""
                     }`}
                   >
@@ -94,7 +94,7 @@ const Sidebar = () => {
       </div>
 
       <div className="flex justify-around pb-3">
-        <div className="flex gap-3">
+        <div className="flex gap-3 text-sm">
           <img src={avatar} className="w-10"/>
           <div>
             <h5 className="font-bold">Asad Khan</h5>

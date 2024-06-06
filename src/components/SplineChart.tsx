@@ -76,11 +76,11 @@ const SplineChart = () => {
   
   return (
     <div className="bg-[#ffff] rounded-xl p-4">
-      <h2 className="font-semibold text-xl pl-3">Overview</h2>
+      <h2 className="font-semibold text-lg pl-3">Overview</h2>
       <Chart
         options={data.options}
         series={data.series}
-        width={750}
+        width={'100%'}
         height={320}
       />
     </div>

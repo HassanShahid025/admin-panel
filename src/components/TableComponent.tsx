@@ -30,7 +30,7 @@ const TableComponent = () => {
         </TableHeader>
         <TableBody>
           {repeatedData.map((data, index) => (
-            <TableRow key={index} className="font-semibold text-base whitespace-nowrap border-b-4 border-gray-200">
+            <TableRow key={index} className="font-semibold text-sm whitespace-nowrap border-b-4 border-gray-200">
               <TableCell>{data.name}</TableCell>
               <TableCell>{data.email}</TableCell>
               <TableCell>{data.nationality}</TableCell>
