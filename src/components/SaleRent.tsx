@@ -9,9 +9,9 @@ const SaleRent = () => {
     options: {
       chart: {
         width: 380,
-        type: "donut" as const,
+        type: "donut",
         events: {
-          dataPointSelection: (event: any, chartContext: any, config: any) => {
+          dataPointSelection: (config) => {
             setSelectedIndex(config.dataPointIndex);
           },
         },
