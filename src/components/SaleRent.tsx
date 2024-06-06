@@ -6,7 +6,7 @@ const SaleRent = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const chartData = {
-    series: [65, 35],
+    series: [2345, 1435],
     options: {
       chart: {
         width: 380,
