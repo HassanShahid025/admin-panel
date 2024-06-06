@@ -1,5 +1,6 @@
 import { GoPlus } from "react-icons/go";
 import listingImg from '../assets/dashboard/listing.png'
+import { Dropdown } from "./Dropdown";
 
 const Listings = () => {
    const listingsData = [
@@ -29,12 +30,12 @@ const Listings = () => {
     },
    ] 
   return (
-    <div className='bg-[#ffff] rounded-xl p-3 flex flex-col gap-5'>
+    <div className='bg-[#ffff] rounded-xl p-5 flex flex-col gap-5'>
         <div className="flex items-center justify-between">
             <h2 className="font-semibold text-xl">Listings</h2>
             <div className="flex items-center gap-5">
                 <p className="text-[#959595]">Sort By</p>
-                {/* {dropdown} */}
+                <Dropdown/>
                 <button className="flex items-center p-2 rounded-xl text-[#ffff] bg-[#FFBF20]">
                     <GoPlus color="white"/>
                     Add

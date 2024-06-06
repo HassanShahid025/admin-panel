@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
+import Agent from "./pages/Agent";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Dashboard/>} />
-          <Route path="/property" element={<h1>Property</h1>} />
-          <Route path="/about" element={<h1>About</h1>} />
+          <Route path="/agent" element={<Agent/>} />
+          <Route path="/customers" element={<Agent/>} />
         </Routes>
       </div>
     </div>

@@ -56,7 +56,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="border border-sky-500 w-1/5 flex flex-col justify-between min-h-screen">
+    <div className=" w-1/5 flex flex-col justify-between min-h-screen">
       <div className="flex flex-col gap-20">
         <div className="flex justify-center pt-5 ">
           <img src={logo} className="h-12" />

@@ -6,7 +6,7 @@ import notificatonIcon from '../assets/Group 79.svg'
 
 const Navbar = () => {
   return (
-    <div className='border border-red-300 w-full h-20 flex items-center justify-between'>
+    <div className='w-full h-20 flex items-center justify-between'>
         <h2 className="font-bold pl-5 text-2xl">Dashboard</h2>
         <div className="flex gap-5 pr-5">
             <SearchBar />
