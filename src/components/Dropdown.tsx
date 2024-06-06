@@ -18,7 +18,7 @@ export function Dropdown() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="text-[#959595] gap-2 font-normal outline-none focus:border-none">
-            Popular
+           {position}
             <MdKeyboardArrowDown/>
         </Button>
       </DropdownMenuTrigger>

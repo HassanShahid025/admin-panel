@@ -1,0 +1,20 @@
+@keyframes fill-left-to-right {
+    from { width: 0; }
+    to { width: 40%; }
+  }
+  
+  .fill-left-to-right {
+    animation: fill-left-to-right .3s ease-in-out;
+  }
+
+@keyframes fill-right-to-left {
+    from { width: 40; }
+    to { width: 0%; }
+  }
+  
+  .fill-right-to-left {
+    animation: fill-right-to-left .3s ease-in-out;
+  }
+
+
+  

@@ -9,14 +9,14 @@ const Dashboard = () => {
   return (
     <div className="bg-[#f6f6f6] p-7 flex gap-9 flex-col">
       <Cards />
-      <div className="flex gap-7"> 
+      <div className="flex gap-7 max-lg:flex-col"> 
 
-        <div className="w-4/6 flex flex-col gap-10">
+        <div className="w-4/6 flex flex-col gap-10 max-lg:w-full">
             <SplineChart/>
             <Listings/>
         </div>
         
-        <div className="w-2/6 flex flex-col gap-10">
+        <div className="w-2/6 flex flex-col gap-10 max-lg:w-full">
             <Transactions/>
             <SaleRent/>
         </div>

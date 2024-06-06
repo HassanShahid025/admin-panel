@@ -4,13 +4,16 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Agent from "./pages/Agent";
+import { useState } from "react";
 
 function App() {
+  const [sideBarVisible, setSideBarVisible] = useState(false);
+
   return (
     <div className="flex">
-      <Sidebar />
-      <div className="flex flex-col w-4/5">
-        <Navbar />
+      <Sidebar sideBarVisible={sideBarVisible} setSideBarVisible={setSideBarVisible}/>
+      <div className="flex flex-col w-4/5 max-lg:w-full">
+        <Navbar setSideBarVisible={setSideBarVisible}/>
 
         <Routes>
           <Route path="/" element={<Dashboard/>} />

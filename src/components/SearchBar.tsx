@@ -1,7 +1,7 @@
 import { FaSearch } from 'react-icons/fa'
 const SearchBar = () => {
     return (
-        <div className="flex items-center bg-[#F8F8F8] rounded-lg w-96 p-2">
+        <div className="flex items-center bg-[#F8F8F8] rounded-lg w-96 p-2 max-md:w-56">
           <input
             type="text"
             placeholder="Search type of keywords"

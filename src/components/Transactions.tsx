@@ -32,7 +32,7 @@ const Transactions = () => {
       <div className="flex flex-col justify-center gap-5 text-sm">
         {transactionsData.map((transaction, index) => (
           <div key={index} className="flex justify-between">
-            <div className="flex gap-5">
+            <div className="flex gap-5 max-md:gap-2">
               <img src={avatar} alt="avatar" />
               <div>
                 <h2 className="font-semibold whitespace-nowrap">{transaction.name}</h2>
