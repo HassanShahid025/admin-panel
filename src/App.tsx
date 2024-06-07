@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Agent from "./pages/Agent";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Dashboard/>} />
           <Route path="/agent" element={<Agent/>} />
           <Route path="/customers" element={<Agent/>} />
+          <Route path="/profile" element={<Profile/>} />
         </Routes>
       </div>
     </div>
