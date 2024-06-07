@@ -1,42 +1,38 @@
-import { Copy } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
 
 type DialogProps = {
-    data : {
-        name: string,
-        email: string,
-        nationality: string,
-        projects : number,
-        language : string
-    }
-    
-}
+  data: {
+    name: string;
+    email: string;
+    nationality: string;
+    projects: number;
+    language: string;
+  };
+};
 
-export function DialogComponent({data}:DialogProps) {
+export function DialogComponent({ data }: DialogProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-      <p className="text-[#FFBF20] underline  underline-offset-1 cursor-pointer text-sm">View Details</p>
+        <p className="text-[#FFBF20] underline  underline-offset-1 cursor-pointer text-sm">
+          View Details
+        </p>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md max-lg:w-72 rounded-xl">
         <div className="flex items-center space-x-2">
           <div className="flex flex-col gap-5 font-medium">
-           <p>Name: {data.name}</p>
-           <p>Email: {data.email}</p>
-           <p>Nationality: {data.nationality}</p>
-           <p>Projects: {data.projects}</p>
-           <p>Language: {data.language}</p>
+            <p>Name: {data.name}</p>
+            <p>Email: {data.email}</p>
+            <p>Nationality: {data.nationality}</p>
+            <p>Projects: {data.projects}</p>
+            <p>Language: {data.language}</p>
           </div>
         </div>
         <DialogFooter className="sm:justify-start">
@@ -48,5 +44,5 @@ export function DialogComponent({data}:DialogProps) {
         </DialogFooter>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

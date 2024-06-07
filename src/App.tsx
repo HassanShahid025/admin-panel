@@ -7,13 +7,11 @@ import Agent from "./pages/Agent";
 import { useState } from "react";
 
 function App() {
-  const [sideBarVisible, setSideBarVisible] = useState(false);
-
   return (
     <div className="flex">
       <Sidebar/>
       <div className="flex flex-col w-4/5 max-lg:w-full">
-        <Navbar setSideBarVisible={setSideBarVisible}/>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Dashboard/>} />
           <Route path="/agent" element={<Agent/>} />
