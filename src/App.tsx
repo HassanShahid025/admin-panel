@@ -11,10 +11,9 @@ function App() {
 
   return (
     <div className="flex">
-      <Sidebar sideBarVisible={sideBarVisible} setSideBarVisible={setSideBarVisible}/>
+      <Sidebar/>
       <div className="flex flex-col w-4/5 max-lg:w-full">
         <Navbar setSideBarVisible={setSideBarVisible}/>
-
         <Routes>
           <Route path="/" element={<Dashboard/>} />
           <Route path="/agent" element={<Agent/>} />

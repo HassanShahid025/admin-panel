@@ -132,7 +132,7 @@ const SaleRent = () => {
     selectedIndex === 0 ? ["#FFBF20", "#EEF1FF"] : ["#EEF1FF", "#FFBF20"];
 
   return (
-    <div className="bg-[#ffff] rounded-xl p-5 flex flex-col gap-8">
+    <div className="bg-[#ffff] rounded-xl p-5 flex flex-col gap-8 max-lg:mb-20">
       <h2 className="font-semibold text-lg">Sale And Rent</h2>
       <div className=" flex w-full justify-center">
         <Chart

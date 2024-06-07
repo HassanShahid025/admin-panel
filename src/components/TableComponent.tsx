@@ -6,6 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { DialogComponent } from "./DialogComponent";
 
 const TableComponent = () => {
   const tableData = [{
@@ -18,7 +19,7 @@ const TableComponent = () => {
   const repeatedData = Array.from({ length: 12 }, () => tableData[0]);
   return (
     <div>
-      <Table>
+      <Table className="max-lg:hidden">
         <TableHeader className="font-normal border-b-4 border-gray-200">
           <TableRow>
             <TableHead className="w-[100px]">Name</TableHead>
@@ -40,6 +41,15 @@ const TableComponent = () => {
           ))}
         </TableBody>
       </Table>
+      <div className="rounded-xl flex flex-col p-5 lg:hidden gap-5 bg-[#ffff]">
+        {repeatedData.map((data,index) => (
+          <div key={index} className="flex justify-between items-center">
+            <h2 className="font-semibold">{data.name}</h2>
+            <DialogComponent data={data}/>
+          </div>
+        ))}
+      </div>
+      
     </div>
   );
 };
