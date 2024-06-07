@@ -4,7 +4,6 @@ import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Agent from "./pages/Agent";
-import { useState } from "react";
 
 function App() {
   return (
